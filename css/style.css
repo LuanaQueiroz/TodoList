@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap');
+
+:root{
+    --primary-color:#708df8;
+    --second-color:#ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: #f5f5f5;
+}
+
+.containerTodo{
+    position: absolute;
+    width: 390px;
+    height: 400px;
+    left: 445px;
+    top:160px;
+    background-color: var(--second-color);
+}
+
+.btt{
+    display: flex;
+}
+
+.btt > button{
+    border: none;
+    width: 390px;
+    height: 58px;
+    left: 445px;
+    top: 160px;
+    background-color: var(--second-color);
+    border-bottom:1px solid #e8e8e8;
+    border-right:1px solid #e8e8e8 ;
+}
+
+.content{ /*não tô conseguindo colocar*/
+    border: 1px solid #e8e8e8;
+    
+}
+
+.contentDone,
+.contentActivies{
+    display: none;
+}
+
+.activies{
+    display: flex;
+    justify-content: space-between;
+    width: 390px;
+    height: 244px;
+    left: 445px;
+    top: 218px;
+}
+
+.descriptionActivies{
+    width: 390px;
+    height: 83px;
+    left: 445px;
+    top: 461px;
+    border-top: 1px solid #e8e8e8;
+    border-radius: 0px opx 10px 10px;
+}
+
+.contentDone{
+    width: 390px;
+    height: 244px;
+    top: 218px;
+    left: 445px;
+}
+
+.newActive{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.newActive-input{
+   display: flex;
+   justify-content: space-between;
+   width: 390px;
+   height: 83px;
+   left: 445px;
+   top: 461px;
+   border-radius: 0px 0px 10px 10px;
+
+}
+
+#areaActivie,
+#areaTime{
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    color: #343434;
+    border: none;
+    border-bottom: 1px solid #e8e8e8; /*tá errado*/
+}
+
+.newActive>button{
+    width: 149px;
+    height: 32px;
+    left: 565px;
+    top: 528px;
+    background: var(--primary-color);
+    box-shadow: 0px 0px 20px rgba(112,141,248,0.5);
+    border-radius: 60px;
+    border: none;
+    color: var(--second-color);
+}
+
+.active{
+    display: block;
+}
+
+
+
+
+
+
+

@@ -4,36 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>TodoList</title>
 </head>
 <body>
     <main>
         <div class="containerTodo"> <!--quadro do todoList-->
-            <div class="buttons"> <!--botões "activies" e "done"-->
-                <button class="buttonActivie">Activies</button>
-                <button class="buttonDone">Done</button>
+            <div class="btt" id="btn"> <!--botões "activies" e "done"-->
+                <button class="buttonActivie" onclick="changeWindow()">Activies</button>
+                <button class="buttonDone" onclick="changeWindow()">Done</button>
             </div>
 
             <div class="content"><!--conteúdo das atividades referentes aos botões-->
-                <div class="contentActivies"> <!--conteúdo Activies-->
+                <div class="contentActivies" id="contentActivie" class="active"> <!--conteúdo Activies-->
                     <div class="activies">
-                        <img src="" alt="">
+                        <div class="activiesItem"> <!--nome da atividade e tempo-->
+                            <img src="images/VectorActivies.png" alt="ícone">
+                            <span>tempo item 1</span>
+                            <div>item 1</div>
+                        </div>
+                        <div class="trashIcon"><!--ícone de lixeira-->
+                            <button><img src="images/Vector.png" alt="ícone de lixeira"></button>
+                        </div>
                     </div>
                 </div>
 
-                <div class="contentDone"> <!--conteúdo Done-->
-
+                <div class="contentDone" id="contentDone1"> <!--conteúdo botão Done-->
+                    <div>
+                        teste
+                    </div>
+                    
                 </div>
             </div>
 
             <div class="descriptionActivies"> <!--parte para digitar a atividade e o tempo-->
                 
-                <input type="text" placeholder="Task Title"> <!--preenchimento de nova atividade-->
-                <input type="number" name="" id="" placeholder="Time left"> <!--tempo para realizar a atividade-->
+                <div class="newActive"> <!--Criação de novas atividades-->
+                    <div class="newActive-input">
+                        <input type="text" placeholder="Task Title" id="areaActivie"> <!--preenchimento de nova atividade-->
+                        <input type="number" name="" id="areaTime" placeholder="Time left" > <!--tempo para realizar a atividade-->
+                    </div>
+                    <button>Add +</button> <!--botão para adicionar nova atividade-->
+                </div>
             </div> 
         </div>
     </main>
-
-    
+    <script src="js/script.js"></script>
 </body>
 </html>
