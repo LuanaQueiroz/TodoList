@@ -37,7 +37,10 @@ body{
     top: 160px;
     background-color: var(--second-color);
     border-bottom:1px solid #e8e8e8;
-    border-right:1px solid #e8e8e8 ;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+     
 }
 
 .content{ /*não tô conseguindo colocar*/
@@ -115,9 +118,11 @@ body{
     color: var(--second-color);
 }
 
-.active{
+.active{ /*para mudar as janelas do todolist*/
     display: block;
 }
+
+
 
 
 
