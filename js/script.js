@@ -2,10 +2,10 @@
 
 const changeWindow = () =>{
     
-    let bttActivie = document.querySelector('#bttActivie')
-    let bttDone = document.querySelector('#bttDone')
-    let contentActivie = document.querySelector('#contentActivie')
-    let contentDone1 = document.querySelector('#contentDone1')
+    let bttActivie = document.querySelector('#bttActivie')//botão activies
+    let bttDone = document.querySelector('#bttDone')//botão done
+    let contentActivie = document.querySelector('#contentActivie')//conteúdo activies
+    let contentDone1 = document.querySelector('#contentDone1')//conteúdo done
 
     if(contentActivie.classList.contains('active')){
         contentActivie.classList.remove('active')
@@ -22,19 +22,20 @@ const changeWindow = () =>{
 
 }
 
+
 //adicionar nova atividade
 
 const createItem = (time,activity) =>{
     const item = document.createElement('label')
     item.classList.add('activies')
     item.innerHTML = `
-        <div class="activiesItem"> <!--nome da atividade e tempo-->
+        <div class="activiesItem">
             <img src="images/VectorActivies.png" alt="ícone" class="icon">
             <span >${time}</span>
             <div class="item">${activity}</div>
             <img src="images/Line 3.png" alt="linha">
         </div>
-        <div class="trashIcon"><!--ícone de lixeira-->
+        <div class="trashIcon">
             <button><img src="images/Vector.png" alt="ícone de lixeira"></button>
         </div>
     `

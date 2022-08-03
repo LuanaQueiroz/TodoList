@@ -117,8 +117,6 @@ span{
    left: 445px;
    top: 461px;
    border-radius: 0px 0px 10px 10px;
-   padding: 2%;
-
 }
 
 #areaActivie,
@@ -128,6 +126,8 @@ span{
     line-height: 12px;
     color: #343434;
     border: none;
+    margin: 2%;
+    
 }
 
 .newActive>button{
@@ -146,6 +146,7 @@ span{
 .active{ /*para mudar as janelas do todolist*/
     display: block;
 }
+
 
 
 
