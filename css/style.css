@@ -37,15 +37,12 @@ body{
     top: 160px;
     background-color: var(--second-color);
     border-bottom:1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
     font-weight: 700;
     font-size: 12px;
     line-height: 15px;
-     
-}
-
-.content{ /*não tô conseguindo colocar*/
-    border: 1px solid #e8e8e8;
-    
+    size: 10px;
+    cursor: pointer;
 }
 
 .contentDone,
@@ -60,6 +57,37 @@ body{
     height: 244px;
     left: 445px;
     top: 218px;
+    padding: 2%;
+}
+
+span{
+    width: 43px;
+    height: 10px;
+    left: 493px;
+    top: 235px;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 10px;
+    color: #343434;
+}
+
+.item{
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    color: #343434;
+    padding: 5%;
+    width: 91px;
+    height: 12px;
+    left: 493px;
+    top: 243px;
+}
+
+.iconActivies{
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 10px;
+    color: #343434;
 }
 
 .descriptionActivies{
@@ -82,7 +110,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+     
 }
 
 .newActive-input{
@@ -93,6 +121,7 @@ body{
    left: 445px;
    top: 461px;
    border-radius: 0px 0px 10px 10px;
+   padding: 2%;
 
 }
 
@@ -103,7 +132,6 @@ body{
     line-height: 12px;
     color: #343434;
     border: none;
-    border-bottom: 1px solid #e8e8e8; /*tá errado*/
 }
 
 .newActive>button{
@@ -116,6 +144,7 @@ body{
     border-radius: 60px;
     border: none;
     color: var(--second-color);
+    cursor: pointer;
 }
 
 .active{ /*para mudar as janelas do todolist*/

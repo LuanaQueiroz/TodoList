@@ -17,22 +17,14 @@
 
             <div class="content"><!--conteúdo das atividades referentes aos botões-->
                 <div class="contentActivies" id="contentActivie" class="active"> <!--conteúdo Activies-->
-                    <div class="activies">
-                        <div class="activiesItem"> <!--nome da atividade e tempo-->
-                            <img src="images/VectorActivies.png" alt="ícone">
-                            <span>tempo item 1</span>
-                            <div>item 1</div>
-                        </div>
-                        <div class="trashIcon"><!--ícone de lixeira-->
-                            <button><img src="images/Vector.png" alt="ícone de lixeira"></button>
-                        </div>
-                    </div>
+                    
                 </div>
 
                 <div class="contentDone" id="contentDone1" > <!--conteúdo botão Done-->
                     <div>
                         teste
                     </div>
+                    <img src="images/Line 3.png" alt="linha">
                     
                 </div>
             </div>
@@ -42,9 +34,10 @@
                 <div class="newActive"> <!--Criação de novas atividades-->
                     <div class="newActive-input">
                         <input type="text" placeholder="Task Title" id="areaActivie"> <!--preenchimento de nova atividade-->
+                       
                         <input type="number" name="" id="areaTime" placeholder="Time left" > <!--tempo para realizar a atividade-->
                     </div>
-                    <button>Add +</button> <!--botão para adicionar nova atividade-->
+                    <button onclick="createItem()">Add <img src="images/Vectoradd.png" alt=""></button> <!--botão para adicionar nova atividade-->
                 </div>
             </div> 
         </div>

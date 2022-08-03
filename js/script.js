@@ -1,4 +1,4 @@
-//alternar janelas
+//alternar janelas e mudar a cor dos botões
 
 const changeWindow = () =>{
     
@@ -20,5 +20,24 @@ const changeWindow = () =>{
         bttActivie.style.color = '#708DF8'
     }
 
+}
+
+//adicionar nova atividade
+
+const createItem = (time,activity) =>{
+    const item = document.createElement('label')
+    item.classList.add('activies')
+    item.innerHTML = `
+        <div class="activiesItem"> <!--nome da atividade e tempo-->
+            <img src="images/VectorActivies.png" alt="ícone" class="icon">
+            <span >${time}</span>
+            <div class="item">${activity}</div>
+            <img src="images/Line 3.png" alt="linha">
+        </div>
+        <div class="trashIcon"><!--ícone de lixeira-->
+            <button><img src="images/Vector.png" alt="ícone de lixeira"></button>
+        </div>
+    `
+    document.getElementById('contentActivie').appendChild(item)
 }
 
