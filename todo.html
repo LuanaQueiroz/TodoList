@@ -10,34 +10,29 @@
 <body>
     <main>
         <div class="containerTodo"> <!--quadro do todoList-->
+
             <div class="btt" id="btn"> <!--botões "activies" e "done"-->
                 <button class="buttonActivie activeText" onclick="showContent('activies')" id="bttActivie" >Activies</button>
                 <button class="buttonDone" onclick="showContent('done')"  id="bttDone">Done</button>
             </div>
 
             <div class="content"><!--conteúdo das atividades referentes aos botões-->
-                <div class="contentActivies tasks activies" id="contentActivie"> <!--conteúdo Activies-->
+                <div class="contentActivies tasks activies" id="contentActivie"><!--conteúdo Activies-->
+                    <p>teste1</p>
                     
                 </div>
-
-                <div class="contentDone" id="contentDone1"> <!--conteúdo botão Done-->
-                    
-                   
-                    
+                <div class="contentDone " id="contentDone1"><!--conteúdo botão Done-->
+                    <p>teste2</p>
                 </div>
             </div>
 
-            <div class="descriptionActivies"> <!--parte para digitar a atividade e o tempo-->
-                
-                <div class="newActive"> <!--Criação de novas atividades-->
-                    <div class="newActive-input">
-                        <input type="text" placeholder="Task Title" id="areaActivie"> <!--preenchimento de nova atividade-->
-                       
-                        <input type="number" name="" id="areaTime" placeholder="Time left"> <!--tempo para realizar a atividade-->
-                    </div>
-                    <button onclick="addTask()">Add <img src="images/Vectoradd.png" alt=""></button> <!--botão para adicionar nova atividade-->
+            <div class="newActive"> <!--Criação de novas atividades-->
+                <div class="newActive-input">
+                    <input type="text" placeholder="Task Title" id="areaActivie"> <!--preenchimento de nova atividade-->
+                    <input type="number" name="" id="areaTime" placeholder="Time left"> <!--tempo para realizar a atividade-->
                 </div>
-            </div> 
+                <button onclick="addTask()">Add <img src="images/Vectoradd.png" alt=""></button> <!--botão para adicionar nova atividade-->
+            </div>
         </div>
     </main>
     <script src="js/script.js"></script>

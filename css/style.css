@@ -47,7 +47,7 @@ body{
 
 .contentDone,
 .contentActivies{
-    display: none;
+    display: none; 
 }
 
 .item{
@@ -93,18 +93,8 @@ span{
     color: #343434;
 }
 
-.descriptionActivies{
-    width: 390px;
-    height: 83px;
-    left: 445px;
-    top: 461px;
-    border-top: 1px solid #e8e8e8;
-    border-radius: 0px opx 10px 10px;
-}
 
 .contentDone{
-    width: 390px;
-    height: 244px;
     top: 218px;
     left: 445px;
 }
@@ -113,6 +103,12 @@ span{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 390px;
+    height: 83px;
+    left: 445px;
+    top: 461px;
+    border-top: 1px solid #e8e8e8;
+    border-radius: 0px opx 10px 10px;
      
 }
 
@@ -132,10 +128,9 @@ span{
     color: #343434;
     border: none;
     margin: 2%;
-    
 }
 
-.newActive>button{
+.newActive > button{
     width: 149px;
     height: 32px;
     left: 565px;
@@ -152,7 +147,9 @@ span{
     display: block;
 }
 
-.activeText{
+
+
+.activeText{ /*mudar a cor das letras dos botões*/
     color: #708df8;
 }
 

@@ -4,7 +4,7 @@ const tasks = []
 //alternar janelas e mudar a cor dos botões
 
 
-const showContent = (content) =>{
+const showContent = (content) =>{ //content = div que possui as 2 áreas
     if(content === 'activies'){
         contentActivie.classList.add('active')
         contentDone1.classList.remove('active')
@@ -19,13 +19,13 @@ const showContent = (content) =>{
     }
 }
 
+
 //adicionar nova atividade
 
 const createItem = (time,activity) =>{
-    
-    
     return `
-        <div class='item'>
+    
+    <div class='item'>
         <div class="activiesItem">
             <img src="images/VectorActivies.png" alt="ícone" class="icon">
             <span >${time}</span>
@@ -36,9 +36,11 @@ const createItem = (time,activity) =>{
             <button><img src="images/Vector.png" alt="ícone de lixeira"></button>
         </div>
         </div>
-    `
-   
+    ` 
 }
+
+
+//criação dos elementos time e activity nos inputs
 
 const loadTasks = () =>{
     document.getElementById('contentActivie').innerHTML =''
@@ -57,4 +59,5 @@ const addTask = () =>{
     loadTasks() 
     
 }
+
 
