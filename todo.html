@@ -11,20 +11,18 @@
     <main>
         <div class="containerTodo"> <!--quadro do todoList-->
             <div class="btt" id="btn"> <!--botões "activies" e "done"-->
-                <button class="buttonActivie" onclick="changeWindow()" id="bttActivie" >Activies</button>
-                <button class="buttonDone" onclick="changeWindow()"  id="bttDone">Done</button>
+                <button class="buttonActivie activeText" onclick="showContent('activies')" id="bttActivie" >Activies</button>
+                <button class="buttonDone" onclick="showContent('done')"  id="bttDone">Done</button>
             </div>
 
             <div class="content"><!--conteúdo das atividades referentes aos botões-->
-                <div class="contentActivies" id="contentActivie" class="active"> <!--conteúdo Activies-->
+                <div class="contentActivies tasks activies" id="contentActivie"> <!--conteúdo Activies-->
                     
                 </div>
 
                 <div class="contentDone" id="contentDone1"> <!--conteúdo botão Done-->
-                    <div>
-                        teste
-                    </div>
-                    <img src="images/Line 3.png" alt="linha">
+                    
+                   
                     
                 </div>
             </div>
@@ -37,7 +35,7 @@
                        
                         <input type="number" name="" id="areaTime" placeholder="Time left"> <!--tempo para realizar a atividade-->
                     </div>
-                    <button onclick="createItem()">Add <img src="images/Vectoradd.png" alt=""></button> <!--botão para adicionar nova atividade-->
+                    <button onclick="addTask()">Add <img src="images/Vectoradd.png" alt=""></button> <!--botão para adicionar nova atividade-->
                 </div>
             </div> 
         </div>

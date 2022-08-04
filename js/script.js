@@ -1,34 +1,31 @@
+const tasks = []
+
+
 //alternar janelas e mudar a cor dos botões
 
-const changeWindow = () =>{
-    
-    let bttActivie = document.querySelector('#bttActivie')//botão activies
-    let bttDone = document.querySelector('#bttDone')//botão done
-    let contentActivie = document.querySelector('#contentActivie')//conteúdo activies
-    let contentDone1 = document.querySelector('#contentDone1')//conteúdo done
 
-    if(contentActivie.classList.contains('active')){
-        contentActivie.classList.remove('active')
-        contentDone1.classList.add('active')
-        bttDone.style.color = '#708DF8'
-        bttActivie.style.color = '#B8B8B8'
-
-    }else{
+const showContent = (content) =>{
+    if(content === 'activies'){
         contentActivie.classList.add('active')
         contentDone1.classList.remove('active')
-        bttDone.style.color = '#B8B8B8'
-        bttActivie.style.color = '#708DF8'
+        bttActivie.classList.add('activeText')
+        bttDone.classList.remove('activeText')
+        
+    }else{
+        contentActivie.classList.remove('active')
+        contentDone1.classList.add('active')
+        bttActivie.classList.remove('activeText')
+        bttDone.classList.add('activeText')
     }
-
 }
-
 
 //adicionar nova atividade
 
 const createItem = (time,activity) =>{
-    const item = document.createElement('label')
-    item.classList.add('activies')
-    item.innerHTML = `
+    
+    
+    return `
+        <div class='item'>
         <div class="activiesItem">
             <img src="images/VectorActivies.png" alt="ícone" class="icon">
             <span >${time}</span>
@@ -38,7 +35,26 @@ const createItem = (time,activity) =>{
         <div class="trashIcon">
             <button><img src="images/Vector.png" alt="ícone de lixeira"></button>
         </div>
+        </div>
     `
-    document.getElementById('contentActivie').appendChild(item)
+   
+}
+
+const loadTasks = () =>{
+    document.getElementById('contentActivie').innerHTML =''
+    tasks.forEach(element => {
+        createItem(element.time,element.activity)
+    });
+    document.getElementById('contentActivie').innerHTML = tasks
+}
+
+const addTask = () =>{
+    const task ={
+        time: document.getElementById('areaTime').value,
+        activity: document.getElementById('areaActivie').value
+    }
+    tasks.push(createItem(task.time, task.activity))  
+    loadTasks() 
+    
 }
 

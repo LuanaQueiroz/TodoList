@@ -50,12 +50,17 @@ body{
     display: none;
 }
 
-.activies{
+.item{
     display: flex;
     justify-content: space-between;
     left: 445px;
     top: 218px;
     padding: 2%;
+}
+
+.tasks{
+    display: flex;
+    flex-direction: column;
 }
 
 span{
@@ -147,7 +152,9 @@ span{
     display: block;
 }
 
-
+.activeText{
+    color: #708df8;
+}
 
 
 
