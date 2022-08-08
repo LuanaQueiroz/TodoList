@@ -9,7 +9,7 @@
 </head>
 <body>
     <main>
-        <div class="containerTodo"> <!--quadro do todoList-->
+        <div class="containerTodo" onclick="upScreen()"> <!--quadro do todoList-->
 
             <div class="btt" id="btn"> <!--botões "activies" e "done"-->
                 <button class="buttonActivie activeText" onclick="showContent('activies')" id="bttActivie" >Activies</button>
@@ -20,6 +20,7 @@
                 <div class="contentActivies activies" id="contentActivie"><!--conteúdo Activies (o tasks tava na classe)--></div>
 
                 <div class="contentDone" id="contentDone1"></div>
+                
             </div>
 
             <div class="newActive"> <!--Criação de novas atividades-->
