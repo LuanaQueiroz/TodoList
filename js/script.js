@@ -20,6 +20,7 @@ const showContent = (content) =>{ //content = div que possui as 2 áreas
 }
 
 
+
 //adicionar nova atividade
 
 const createItem = (time,activity) =>{

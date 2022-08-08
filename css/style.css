@@ -45,9 +45,18 @@ body{
     cursor: pointer;
 }
 
+.content{
+    width: 390px;
+    height: 244px;
+    top: 218px;
+    left: 445px;
+    
+}
+
 .contentDone,
 .contentActivies{
     display: none; 
+   
 }
 
 .item{
@@ -56,6 +65,14 @@ body{
     left: 445px;
     top: 218px;
     padding: 2%;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    color: #343434;
+    width: 91px;
+    height: 12px;
+    
+   
 }
 
 .tasks{
@@ -74,25 +91,12 @@ span{
     color: #343434;
 }
 
-.item{
-    font-weight: 500;
-    font-size: 10px;
-    line-height: 12px;
-    color: #343434;
-    padding: 5%;
-    width: 91px;
-    height: 12px;
-    left: 493px;
-    top: 243px;
-}
-
 .iconActivies{
     font-weight: 700;
     font-size: 8px;
     line-height: 10px;
     color: #343434;
 }
-
 
 .contentDone{
     top: 218px;
@@ -146,8 +150,6 @@ span{
 .active{ /*para mudar as janelas do todolist*/
     display: block;
 }
-
-
 
 .activeText{ /*mudar a cor das letras dos botões*/
     color: #708df8;
