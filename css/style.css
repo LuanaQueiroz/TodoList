@@ -18,13 +18,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden; /**/
 }
 
 .containerTodo{
     border-radius: 10px;
     position: relative;
-    width: 390px;
-    height: 400px;
+    width: 400px;
+    height: 390px;
     background-color: var(--second-color);
 }
 
@@ -55,31 +56,35 @@ body{
 }
 
 .content{
-    overflow-y: auto; /*scrool para não estourar*/
+    overflow-y: auto; /*scrool para não estourar o espaço*/
+    padding: 5px;/**/
+}
+
+.content:nth-child(1){
+    width: 390px;
     height: 244px;
     
-    
+}
+
+.content:nth-child(2){
+    width: 390px;
+    height: 244px;
 }
 
 .contentDone,
 .contentActivies{
-    display: none; 
-   
+    display: none;   
 }
 
 .item{
     display: flex;
-    justify-content: space-between;
-    padding: 2%;
+    justify-content: space-between; 
     font-weight: 500;
     font-size: 10px;
     line-height: 12px;
     color: #343434;
-    width: 91px;
-    height: 12px;
-    
-   
 }
+
 
 .tasks{
     display: flex;

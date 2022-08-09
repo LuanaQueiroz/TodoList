@@ -3,7 +3,6 @@ const tasks = []
 
 //alternar janelas e mudar a cor dos botões
 
-
 const showContent = (content) =>{ //content = div que possui as 2 áreas
     if(content === 'activies'){
         contentActivie.classList.add('active')
@@ -18,8 +17,6 @@ const showContent = (content) =>{ //content = div que possui as 2 áreas
         bttDone.classList.add('activeText')
     }
 }
-
-
 
 //adicionar nova atividade
 
@@ -39,7 +36,6 @@ const createItem = (time,activity) =>{
         </div>
     ` 
 }
-
 
 //criação dos elementos time e activity nos inputs
 
