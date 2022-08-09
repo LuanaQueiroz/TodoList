@@ -45,10 +45,7 @@ const createItem = (time,activity) =>{
 
 const loadTasks = () =>{
     document.getElementById('contentActivie').innerHTML =''
-    tasks.forEach(element => {
-        createItem(element.time,element.activity)
-    });
-    document.getElementById('contentActivie').innerHTML = tasks
+    document.getElementById('contentActivie').innerHTML = tasks.join('')
 }
 
 const addTask = () =>{
