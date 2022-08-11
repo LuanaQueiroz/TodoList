@@ -85,7 +85,6 @@ body{
     color: #343434;
 }
 
-
 .tasks{
     display: flex;
     flex-direction: column;
@@ -135,6 +134,21 @@ span{
    border-radius: 0px 0px 10px 10px;
 }
 
+.newActive-input2 > input{ 
+    outline: none;
+    width: 254px;
+}
+
+.newActive-input3> input{ 
+    outline: none;
+    width: 87px;
+}
+
+.newActive-input3 > img{
+    width: 87px;
+    outline: none;
+}
+
 #areaActivie,
 #areaTime{
     font-weight: 500;
@@ -156,6 +170,15 @@ span{
     color: var(--second-color);
     cursor: pointer;
     bottom: -16px;
+}
+
+::-webkit-scrollbar {/*barra arrastável de rolagem inteira*/
+    width: 3px;
+    background: var(--primary-color);
+}
+
+::-webkit-scrollbar-thumb { /*barra arrastável de rolagem*/
+    background: var(--second-color);
 }
 
 .active{ /*para mudar as janelas do todolist*/

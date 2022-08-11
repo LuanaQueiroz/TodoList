@@ -31,7 +31,7 @@ const createItem = (time,activity) =>{
             <img src="images/Line 3.png" alt="linha">
         </div>
         <div class="trashIcon">
-            <button><img src="images/Vector.png" alt="ícone de lixeira"></button>
+            <button><img src="images/lixeira2.png" alt="ícone de lixeira"></button>
         </div>
         </div>
     ` 
