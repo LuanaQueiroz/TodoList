@@ -31,7 +31,7 @@ const createItem = (time,activity) =>{
             <img src="images/Line 3.png" alt="linha">
         </div>
         <div class="trashIcon">
-            <button><img src="images/lixeira2.png" alt="ícone de lixeira"></button>
+            <button onclick="deleteAdd('activies')"><img src="images/lixeira2.png" alt="ícone de lixeira" ></button>
         </div>
         </div>
     ` 
@@ -52,6 +52,18 @@ const addTask = () =>{
     tasks.push(createItem(task.time, task.activity))  
     loadTasks() 
     
+}
+
+//atividade realizada para o done
+
+const deleteAdd = (content) =>{
+    if(content === 'activies'){
+        contentActivie.classList.remove('activie')
+        contentDone1.classList.add('activie')
+    }else{
+        contentActivie.classList.add('activie')
+        contentDone1.classList.remove('activie')
+    }
 }
 
 
