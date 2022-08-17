@@ -31,10 +31,11 @@ const createItem = (time,activity) =>{
             <img src="images/Line 3.png" alt="linha">
         </div>
         <div class="trashIcon">
-            <button onclick="deleteAdd('activies')"><img src="images/lixeira2.png" alt="ícone de lixeira" ></button>
+            <button class="activies" onclick="deleteAdd('activies')"><img src="images/lixeira2.png" alt="ícone de lixeira" ></button> 
         </div>
         </div>
     ` 
+    //coloquei no button: class="activies" onclick="deleteAdd('activies')"
 }
 
 //criação dos elementos time e activity nos inputs
@@ -54,10 +55,10 @@ const addTask = () =>{
     
 }
 
-//atividade realizada para o done
+//atividade realizada para o done (não está funcionando)
 
-const deleteAdd = (content) =>{
-    if(content === 'activies'){
+const deleteAdd = (contentActivies) =>{
+    if(contentActivies === 'activies'){
         contentActivie.classList.remove('activie')
         contentDone1.classList.add('activie')
     }else{
